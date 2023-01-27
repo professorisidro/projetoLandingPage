@@ -1,0 +1,189 @@
+/* VISAO GERAL DO DOCUMENTO */
+body{
+    font-family: 'Roboto';
+    background-image: url("images/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* ESTILOS REFERENTES AO TITULO */
+#titulo{
+    background-color: #4794ad;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#textotitulo{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+    text-shadow:2px 2px 5px white;
+}
+
+/* ESTILOS REFERENTES AO VIDEO RESPONSIVO */ 
+#video{
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.responsive-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ESTILOS REFERENTES A SEÇAO DE VANTAGENS DO PRODUTO */
+#vantagens{
+    margin-top: 10px;
+    background-color: #3f4f66;
+    border-radius: 5px;
+    padding-right: 10%;
+    padding-left: 10%;   
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+.itemvantagem{
+    color: #5ebfd2;
+}
+i{
+    margin-right: 10px;
+}
+#titulovantagem{
+    text-align: center;
+}
+
+/* ESTILOS REFERENTES A SECAO DE DEPOIMENTOS */
+#tituloDepoimentos{
+    margin-top: 5px;
+    background-color: #041423;    
+    padding-top: 1px;
+    border-radius: 5px;
+}
+h3{
+    margin: 0px 0px 0px 10px;
+    color: white;
+}
+#elementosDepoimentos{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px 5px 5px;
+    justify-content: space-between;
+}
+
+.itemdepoimento{    
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    color: #041423;  
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    width: 30%;      
+}
+
+.rosto{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+}
+
+/* ESTILOS RELATIVOS AO CTA */ 
+#cta{
+    background-color: #5ebfd2;
+    border-radius: 5px;   
+    margin-top : 10px; 
+    margin-bottom: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10px;
+}
+#titulocta{
+    text-align: center;
+    color: #1c4765;
+    margin-bottom: 1px;
+    margin-top: 5px;
+}
+label{
+    display: block;
+    font-size: small;    
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 25px;  
+    border: 0px;  
+    margin-bottom: 15px;
+}
+input:focus{
+    outline: none;
+
+}
+button{
+    background-color: #355c6b;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ESTILOS RELATIVOS AS POLITICAS E REDES SOCIAIS */
+#politicas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3f4f66;
+    color: rgb(203, 203, 203);
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+a:link,  a:active, a:visited{
+    text-decoration: none;
+    color: rgb(203, 203, 203);
+}
+a:hover{
+    font-weight: 900;
+}
+
+
+@media(max-width: 600px){
+    body{
+        padding-left: 0;
+        padding-right: 0%;
+    }
+    #elementosDepoimentos{
+        flex-direction: column;
+    }
+    .itemdepoimento{
+        display: block;
+        width: 95%;
+    }
+    #politicas{
+        flex-direction: column;
+    }
+    #redessociais{
+        border-top: 1px solid white;
+        padding-top: 5px;
+        margin-top: 5px;
+    }
+    #cta{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- usando uma google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- habilitando font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>.: Venda todo o santo dia! :.</title>
+</head>
+
+<body>
+    <div id="titulo">
+        <!-- div com o titulo do produto a ser vendido -->
+        <h2 id="textotitulo">Meu Produto de Tecnologia</h2>
+    </div>
+    <div id="video">
+        <iframe class="responsive-video" src="https://www.youtube.com/embed/qWSzguf5mZ4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <div id="vantagens">
+        <p id="titulovantagem">Confira as vantagens do nosso produto</p>
+        <!-- div com a seção de vantagens do produto -->
+        <p class="itemvantagem"><i class="fa-brands fa-github"></i> Integração com Github</p>
+        <p class="itemvantagem"><i class="fa-brands fa-slack"></i> Robo para Slack</p>
+        <p class="itemvantagem"><i class="fa-brands fa-discord"></i> Robo para Discord</p>
+        <p class="itemvantagem"><i class="fa-brands fa-whatsapp"></i> Robo para Whatsapp</p>
+        <p class="itemvantagem"><i class="fa-brands fa-telegram"></i> Robo para Telegram</p>
+    </div>
+
+    <div id="tituloDepoimentos">
+        <!-- uma linha apenas apresentando os depoimentos da galera -->
+        <h3>O que nossos clientes dizem </h3>
+        <div id="elementosDepoimentos">
+            <div class="itemdepoimento">
+                <img class="rosto" src="images/moco1.jpg">
+                <cite>O Produto é maravilhoso! As vendas aumentaram significativamente após o uso desta feramenta</cite>
+                <p>Josh Seller - CFO Marketin Sells</p>
+            </div>
+            <div class="itemdepoimento">
+                <img class="rosto" src="images/moca1.jpg">
+                <cite>Tivemos uma surpreendente alegria com o volume de vendas</cite>
+                <p>Keith Cliff - Selling Manager</p>
+            </div>
+            <div class="itemdepoimento">
+                <img class="rosto" src="images/moco2.jpg">
+                <cite>A retenção dos clientes aumentou e muito!</cite>
+                <p>Peter Grabb - CEO</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="cta">
+        <!-- aqui vai o botão pra comprar ou mesmo o formulário de captura de leads -->
+        <h3 id="titulocta">Quero fazer parte!</h3>
+
+        <div id="formcta">
+            <form action="index.html" method="post">
+                <label>Seu Nome</label>
+                <input type="text" name="txtNome" maxlength="100" placeholder="John Smith">
+
+                <label>Seu melhor email</label>
+                <input type="email" name="txtEmail" maxlength="100" placeholder="john@smith.com">
+
+                <label>Seu Whastapp</label>
+                <input type="tel" name="txtwhatsapp" maxlength="20" placeholder="(11)98765-4321">
+                <button type="button">Enviar Dados</button>
+            </form>
+        </div>
+    </div>
+    <footer id="politicas">
+        <!-- politica de cancelamento, devoluçao, garantias etc -->
+        <div id="itempolitica">
+            <a href="https://google.com">
+                <p class="itempoliticap">Politica de Privacidade</p>
+            </a>
+            <a href="https://google.com">
+                <p class="itempoliticap">Procedimentos de Cancelamento</p>
+            </a>
+            <a href="https://google.com">
+                <p class="itempoliticap">Termos de Uso</p>
+            </a>
+        </div>
+        <div id="redessociais">
+            <h3>Siga-nos nas redes sociais</h3>
+            <p><a href="https://instagram.com/professorisidro" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a> @produtodetecnologia</p>
+            <p><a href="https://youtube.com/@professorisidro" target="_blank"><i class="fa-brands fa-youtube"></a></i>
+                @produtotechoficial</p>
+            <p><a href="https://app.isiflix.com.br" target="_blank"> <i class="fa-solid fa-globe"></i> </a>
+                @produtotechtwitter</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
